@@ -71,38 +71,28 @@ class Clientes():
         return opc   
               
     def crearListado(self):
-        print("Crear listado Clientes\n")
+        print("Cargar Nuevo Cliente\n")
         seguir = 1
         tipoUsu = self.tipoUsuario()
         while(tipoUsu != -1):
             if tipoUsu == 1:
-                while seguir != 0:
-                    self.listaClientes.append(self.unParticular())
-                    seguir = self.continuar()
-                    if seguir == 0:
-                        tipoUsu = -1
-                        return tipoUsu
-
+                self.listaClientes.append(self.unParticular())
+                print("Cliente registrado exitosamente")
+                tipoUsu = -1
+                
             elif tipoUsu == 2:
-                while seguir != 0:
-                    self.listaClientes.append(self.unProfesional())
-                    seguir = self.continuar()
-                    if seguir == 0:
-                        tipoUsu = -1
-                        return tipoUsu
+                self.listaClientes.append(self.unProfesional())
+                tipoUsu = -1
+                   
 
             elif tipoUsu == 3:
-                while seguir != 0:
-                    self.listaClientes.append(self.unComercial())
-                    seguir = self.continuar()
-                    if seguir == 0:
-                        tipoUsu = -1
-                        return tipoUsu
-
+                self.listaClientes.append(self.unComercial())
+                tipoUsu = -1
+                
             elif tipoUsu == 0:
                 print("Saliste del menu")
                 tipoUsu = -1
-                return tipoUsu
+               
 
     def mostrarListaClientes(self):
         print("Mostrar listado Clientes\n")

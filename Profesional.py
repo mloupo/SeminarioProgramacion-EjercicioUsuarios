@@ -35,7 +35,7 @@ class Profesional(Usuarios):
     
     def muestra(self):
         super().muestra()
-        print('area:',self.area)
-        print('titulo:',self.titulo)
+        print('area:',self.__area)
+        print('titulo:',self.__titulo)
 
     

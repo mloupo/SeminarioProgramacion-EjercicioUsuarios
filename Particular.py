@@ -34,6 +34,6 @@ class Particular(Usuarios):
 
     def muestra(self):
         super().muestra()
-        print('dni:',self.dni) # revisar si lo muestra
-        print('fecha de nacimiento:',self.fechaNacimiento)
+        print('dni:',self.__dni) # revisar si lo muestra
+        print('fecha de nacimiento:',self.__fechaNacimiento)
 

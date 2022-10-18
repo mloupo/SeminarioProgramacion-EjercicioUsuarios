@@ -4,6 +4,7 @@ class Usuarios():
         self.__direccion = direccion
         self.__abono = abono
         self.__baja = False
+        
 
     # getters y setters
     @property
@@ -43,3 +44,10 @@ class Usuarios():
         print('nombre:', self.__nombre)
         print('direccion:', self.__direccion)
         print('abono:', self.__abono)
+
+    def validar(self, miString):
+        caracterBuscado="@"
+        for c in miString:
+            if c == caracterBuscado:
+                return True
+        return False

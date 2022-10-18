@@ -1,4 +1,3 @@
 # SeminarioProgramacionEjercicio
-
-# Ejercicio Seminario de programacion - 
+#Python POO
 Profesor Ramon Gros
